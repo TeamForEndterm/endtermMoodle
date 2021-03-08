@@ -77,7 +77,6 @@ public class Database {
         preparedStatement.setString(1, teacher.getName());
         preparedStatement.setString(2, teacher.getEmail());
         preparedStatement.setString(3, teacher.getPassword());
-        preparedStatement.executeUpdate();
         if (preparedStatement.executeUpdate() > 0) {
             System.out.println("Successfully added!");
         } else {
